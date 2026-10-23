@@ -40,6 +40,12 @@ header {
     font-weight: bold;
 }
 
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
 .menu {
     list-style: none;
     display: flex;
@@ -55,6 +61,27 @@ header {
 
 .menu a:hover {
     color: #38bdf8;
+}
+
+/* Seletor de Idioma (Bandeiras) */
+.lang-selector {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.lang-selector button {
+    background: transparent;
+    border: 1px solid #4b5563;
+    border-radius: 4px;
+    padding: 0.25rem 0.5rem;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.lang-selector button:hover {
+    transform: scale(1.1);
+    background-color: #374151;
 }
 
 /* Seções */
@@ -111,10 +138,20 @@ header {
     color: #0284c7;
 }
 
+.contact-links a {
+    color: #0284c7;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
 /* Formulário de Contato */
 .contact-subtitle {
     text-align: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     color: #64748b;
 }
 
