@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diogo Gonçalves Canaverde - Portfólio</title>
+    <!-- Link para a folha de estilos externa -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho e Menu de Navegação Fixo -->
+    <header>
+        <div class="container nav-container">
+            <h1 class="logo">Diogo Canaverde</h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#sobre">Sobre mim</a></li>
+                    <li><a href="#formacao">Formação</a></li>
+                    <li><a href="#portfolio">Portfólio</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Seção: Sobre Mim -->
+        <section id="sobre" class="section">
+            <div class="container">
+                <h2>Sobre mim</h2>
+                <div class="about-content">
+                    <p>Olá! Meu trabalho envolve tecnologia, suporte e desenvolvimento de sistemas. Sou graduado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Uninter e atuo profissionalmente como Analista de TI, gerenciando aplicações corporativas, processos de ITSM e melhorias contínuas.</p>
+                    <p>Além da minha atuação corporativa, gerencio a <strong>Savi Hardware</strong>, focada em suporte técnico e manutenção avançada de computadores. No tempo livre, gosto de explorar o universo dos jogos, automação e aprimoramento técnico contínuo.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Formação -->
+        <section id="formacao" class="section bg-light">
+            <div class="container">
+                <h2>Formação</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Graduação</h3>
+                        <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
+                        <p>Uninter</p>
+                    </div>
+                    <div class="card">
+                        <h3>Certificações & Cursos</h3>
+                        <p>Enterprise IT Architecture e ITSM Leadership (Alura)</p>
+                        <p>Infraestrutura, Redes, ITIL e Suporte Técnico Avançado</p>
+                    </div>
+                    <div class="card">
+                        <h3>Idiomas</h3>
+                        <p><strong>Português:</strong> Nativo</p>
+                        <p><strong>Inglês:</strong> Intermediário (B1/B2)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Portfólio -->
+        <section id="portfolio" class="section">
+            <div class="container">
+                <h2>Portfólio</h2>
+                <div class="grid-cards">
+                    <div class="card">
+                        <h3>Savi Hardware</h3>
+                        <p>Plataforma e iniciativa própria voltada à prestação de serviços de diagnóstico, montagem e manutenção corretiva de hardware para desktops e notebooks.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Projetos de Automação e ITSM</h3>
+                        <p>Implementação e administração de fluxos de chamados em ServiceNow, gestão de ativos e facilitação de reuniões de CAB (Change Advisory Board).</p>
+                    </div>
+                    <div class="card">
+                        <h3>Desenvolvimento Web (Uninter)</h3>
+                        <p>Criação de portfólios responsivos e aplicações utilizando HTML5, CSS3 puro e JavaScript estruturado sem uso de frameworks externos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção: Contato -->
+        <section id="contato" class="section bg-light">
+            <div class="container">
+                <h2>Contato</h2>
+                <p class="contact-subtitle">Entre em contato comigo preenchendo o formulário abaixo:</p>
+                
+                <!-- Formulário de Contato com validação em JavaScript -->
+                <form id="contactForm" class="contact-form">
+                    <div class="form-group">
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="seu.email@dominio.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="mensagem">Mensagem:</label>
+                        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                </form>
+                <div id="formMessage" class="form-message"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Diogo Gonçalves Canaverde. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Script JavaScript Externo -->
+    <script src="script.js"></script>
+</body>
+</html>
