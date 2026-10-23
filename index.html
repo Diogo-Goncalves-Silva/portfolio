@@ -13,13 +13,19 @@
     <header>
         <div class="container nav-container">
             <h1 class="logo">Diogo Canaverde</h1>
-            <nav>
+            <nav class="nav-menu">
                 <ul class="menu">
-                    <li><a href="#sobre">Sobre mim</a></li>
-                    <li><a href="#formacao">Formação</a></li>
-                    <li><a href="#portfolio">Portfólio</a></li>
-                    <li><a href="#contato">Contato</a></li>
+                    <li><a href="#sobre" data-i18n="nav_sobre">Sobre mim</a></li>
+                    <li><a href="#formacao" data-i18n="nav_formacao">Formação</a></li>
+                    <li><a href="#portfolio" data-i18n="nav_portfolio">Portfólio</a></li>
+                    <li><a href="#contato" data-i18n="nav_contato">Contato</a></li>
                 </ul>
+                <!-- Botões de Troca de Idioma com Bandeiras -->
+                <div class="lang-selector">
+                    <button onclick="mudarIdioma('pt')" title="Português">🇧🇷</button>
+                    <button onclick="mudarIdioma('en')" title="English">🇬🇧</button>
+                    <button onclick="mudarIdioma('es')" title="Español">🇪🇸</button>
+                </div>
             </nav>
         </div>
     </header>
@@ -28,10 +34,10 @@
         <!-- Seção: Sobre Mim -->
         <section id="sobre" class="section">
             <div class="container">
-                <h2>Sobre mim</h2>
+                <h2 data-i18n="sobre_titulo">Sobre mim</h2>
                 <div class="about-content">
-                    <p>Olá! Meu trabalho envolve tecnologia, suporte e desenvolvimento de sistemas. Sou graduado em <strong>Análise e Desenvolvimento de Sistemas</strong> pela Uninter e atuo profissionalmente como Analista de TI, gerenciando aplicações corporativas, processos de ITSM e melhorias contínuas.</p>
-                    <p>Além da minha atuação corporativa, gerencio a <strong>Savi Hardware</strong>, focada em suporte técnico e manutenção avançada de computadores. No tempo livre, gosto de explorar o universo dos jogos, automação e aprimoramento técnico contínuo.</p>
+                    <p data-i18n="sobre_p1">Olá! Sou graduado em Análise e Desenvolvimento de Sistemas pela Uninter e atuo profissionalmente como Analista de TI Júnior (Non-SAP & Governance) na Yara Brasil. Minha rotina envolve a gestão estratégica de aplicações satélites críticas, governança de processos ITSM, Business Intelligence e coordenação de fornecedores para toda a região das Américas.</p>
+                    <p data-i18n="sobre_p2">Além da minha carreira corporativa, gerencio a Savi Hardware, um projeto focado em suporte técnico e manutenção avançada de computadores e notebooks. Sou apaixonado por tecnologia, automação e aprimoramento técnico contínuo.</p>
                 </div>
             </div>
         </section>
@@ -39,22 +45,22 @@
         <!-- Seção: Formação -->
         <section id="formacao" class="section bg-light">
             <div class="container">
-                <h2>Formação</h2>
+                <h2 data-i18n="formacao_titulo">Formação</h2>
                 <div class="grid-cards">
                     <div class="card">
-                        <h3>Graduação</h3>
+                        <h3 data-i18n="form_grad_titulo">Graduação</h3>
                         <p><strong>Análise e Desenvolvimento de Sistemas</strong></p>
                         <p>Uninter</p>
                     </div>
                     <div class="card">
-                        <h3>Certificações & Cursos</h3>
+                        <h3 data-i18n="form_cert_titulo">Certificações & Cursos</h3>
                         <p>Enterprise IT Architecture e ITSM Leadership (Alura)</p>
-                        <p>Infraestrutura, Redes, ITIL e Suporte Técnico Avançado</p>
+                        <p>ITIL 4 Foundation & Governança de TI</p>
                     </div>
                     <div class="card">
-                        <h3>Idiomas</h3>
-                        <p><strong>Português:</strong> Nativo</p>
-                        <p><strong>Inglês:</strong> Intermediário (B1/B2)</p>
+                        <h3 data-i18n="form_idiomas_titulo">Idiomas</h3>
+                        <p><strong data-i18n="portugues">Português:</strong> Nativo</p>
+                        <p><strong data-i18n="ingles">Inglês:</strong> Intermediário Avançado (B2 - Upper-Intermediate)</p>
                     </div>
                 </div>
             </div>
@@ -63,19 +69,19 @@
         <!-- Seção: Portfólio -->
         <section id="portfolio" class="section">
             <div class="container">
-                <h2>Portfólio</h2>
+                <h2 data-i18n="portfolio_titulo">Portfólio</h2>
                 <div class="grid-cards">
                     <div class="card">
-                        <h3>Savi Hardware</h3>
-                        <p>Plataforma e iniciativa própria voltada à prestação de serviços de diagnóstico, montagem e manutenção corretiva de hardware para desktops e notebooks.</p>
+                        <h3 data-i18n="port_yara_titulo">Yara Brasil - Analista de TI Júnior</h3>
+                        <p data-i18n="port_yara_desc">Gestão de aplicações Non-SAP (Senior, Suricato, Strale, Portal de Crédito) e liderança de CAB para as Américas. Atuação em BI com ServiceNow, governança ITSM e coordenação técnica de consultorias externas (ex: EDX) mantendo SLAs de excelência superiores a 87% em acessos e portais críticos.</p>
                     </div>
                     <div class="card">
-                        <h3>Projetos de Automação e ITSM</h3>
-                        <p>Implementação e administração de fluxos de chamados em ServiceNow, gestão de ativos e facilitação de reuniões de CAB (Change Advisory Board).</p>
+                        <h3 data-i18n="port_savi_titulo">Savi Hardware</h3>
+                        <p data-i18n="port_savi_desc">Iniciativa própria e hobby voltado ao diagnóstico, montagem, manutenção corretiva e otimização de hardware para desktops e notebooks (exceto eletrônica avançada/solda, com exceção da substituição pontual de DC jacks).</p>
                     </div>
                     <div class="card">
-                        <h3>Desenvolvimento Web (Uninter)</h3>
-                        <p>Criação de portfólios responsivos e aplicações utilizando HTML5, CSS3 puro e JavaScript estruturado sem uso de frameworks externos.</p>
+                        <h3 data-i18n="port_dev_titulo">Projetos & Automação Web</h3>
+                        <p data-i18n="port_dev_desc">Desenvolvimento de soluções web modernas, responsivas e estruturadas em HTML5, CSS3 e JavaScript puro, sem utilização de frameworks, focando em performance e interatividade.</p>
                     </div>
                 </div>
             </div>
@@ -84,24 +90,29 @@
         <!-- Seção: Contato -->
         <section id="contato" class="section bg-light">
             <div class="container">
-                <h2>Contato</h2>
-                <p class="contact-subtitle">Entre em contato comigo preenchendo o formulário abaixo:</p>
+                <h2 data-i18n="contato_titulo">Contato</h2>
+                <p class="contact-subtitle" data-i18n="contato_sub">Entre em contato comigo pelas redes profissionais ou preenchendo o formulário abaixo:</p>
                 
-                <!-- Formulário de Contato com validação em JavaScript -->
+                <div class="contact-links" style="text-align: center; margin-bottom: 2rem;">
+                    <p>LinkedIn: <a href="https://www.linkedin.com/in/diogo-canaverde-aa8780201/" target="_blank">Diogo Canaverde</a></p>
+                    <p>WhatsApp: (11) 99381-3847</p>
+                </div>
+
+                <!-- Formulário de Contato -->
                 <form id="contactForm" class="contact-form">
                     <div class="form-group">
-                        <label for="nome">Nome:</label>
+                        <label for="nome" data-i18n="label_nome">Nome:</label>
                         <input type="text" id="nome" name="nome" placeholder="Seu nome completo">
                     </div>
                     <div class="form-group">
-                        <label for="email">E-mail:</label>
+                        <label for="email" data-i18n="label_email">E-mail:</label>
                         <input type="email" id="email" name="email" placeholder="seu.email@dominio.com">
                     </div>
                     <div class="form-group">
-                        <label for="mensagem">Mensagem:</label>
+                        <label for="mensagem" data-i18n="label_mensagem">Mensagem:</label>
                         <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."></textarea>
                     </div>
-                    <button type="submit" class="btn-submit">Enviar Mensagem</button>
+                    <button type="submit" class="btn-submit" data-i18n="btn_enviar">Enviar Mensagem</button>
                 </form>
                 <div id="formMessage" class="form-message"></div>
             </div>
@@ -111,7 +122,7 @@
     <!-- Rodapé -->
     <footer>
         <div class="container">
-            <p>&copy; 2026 Diogo Gonçalves Canaverde. Todos os direitos reservados.</p>
+            <p>&copy; 2026 Diogo Gonçalves Canaverde. <span data-i18n="footer_rights">Todos os direitos reservados.</span></p>
         </div>
     </footer>
 
